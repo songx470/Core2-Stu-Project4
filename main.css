@@ -1,0 +1,30 @@
+  /* rotated text */
+    span[class^=rot-] {
+      font: 26px Georgia;
+      height: 250px;
+      position: absolute;
+      width: 20px;
+      left: 50%;
+      top: 25%;
+      transform-origin: bottom center;
+      -webkit-transform-origin: bottom center;
+      text-align: center;
+      /*text-shadow:  0 -10px 0 gray;*/
+}
+    input {
+      
+      position: absolute;
+      bottom: 20px;
+      border: 2px solid black;
+    }
+    input#in {
+      width: 90%;
+      margin: 0;
+      text-align: center;
+      display: block;
+      
+    }
+    input#in-number {
+      width: 5%;
+      margin: 0 90%;
+    }
