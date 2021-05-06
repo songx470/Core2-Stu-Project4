@@ -132,15 +132,6 @@ body {
   box-shadow: 0 0 10px yellow;
 }
 
-#renderbutton, .shitty {
-  width: 100px;
-  height: 23px;
-  background: orange;
-  margin: 20px auto;
-  border-radius: 3px;
-  border: 2px outset grey
-}
-
 @media print {
   .control {
     display: none;
@@ -172,10 +163,6 @@ and (max-device-width : 667px) {
      -webkit-transform: scale(.75,.75); /* Safari */
      transform: scale(.75,.75);
  } 
-}
-
-.shit {
-  font-family: Nosifer Caps;
 }
 
 .fontbox {

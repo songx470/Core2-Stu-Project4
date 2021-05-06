@@ -38,23 +38,3 @@ $(function() {
 
 });
 
-$("#renderbutton").click(function() {
-
-  html2canvas($(".one"), {
-    useCORS: true,
-    onrendered: function(canvas) {
-      // canvas is the final rendered <canvas> element
-      var myImage = canvas.toDataURL("image/png");
-      window.open(myImage);
-    }
-  });
-});
-
-
-$(".shitty").click(function() {
-  if ($(this).hasClass("shit")) {
-    $("#wordtwo").removeClass("shit");
-  } else {
-    $("#wordtwo").addClass("shit");
-  };
-})
