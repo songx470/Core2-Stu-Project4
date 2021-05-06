@@ -1,9 +1,65 @@
-<link rel="stylesheet" type="text/css" href="main.css">
-<script type="text/javascript" src="script.js" defer></script>
+<!DOCTYPE html>
+<html>
 
-<span id="rotated">“Be regular and orderly in your life, so that you may be violent and original in your work.”</span>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<input type="text" id="in" placeholder="type here" autofocus>
+    <title>Home</title>
 
-<!-- value 0 causes memory leak -->
-<input type="number" id="in-number" min="1" max="9" value="4">
+   <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="script.js" defer></script>
+
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="one">
+  <div class="two pink">
+    <div id="wordone"></div>
+    <br />
+    <div id="wordtwo"></div>
+  </div>
+</div>
+<div class="one">
+  <div class="two pink">
+    <div id="wordone"></div>
+    <br />
+    <div id="wordtwo"></div>
+  </div>
+</div>
+<div class="one">
+  <div class="two pink">
+    <div id="wordone"></div>
+    <br />
+    <div id="wordtwo"></div>
+  </div>
+</div>
+
+<div class="control">
+  <p class="head">Custom Label Maker</p>
+  <p class="label">Line 1:</p>
+  <input class="input" id="input1" />
+  <p class="label">Line 2:</p>
+  <input class="input" id="input2" />
+  <div class="clear"></div>
+  <div name="pink" class="sq pink on"></div>
+  <div name="blue" class="sq blue"></div>
+  <div name="green" class="sq green"></div>
+  <div name="winner" class="sq winner"></div>
+  <div class="clear"></div>
+  <p>Line 1 Size:</p>
+  <input id="fontbox1" class="fontbox" value="80">
+  </input>
+  <p>Line 2 Size:</p>
+  <input id="fontbox2" class="fontbox" value="140">
+  </input>
+  <div id="renderbutton">Render Me!</div>
+  <div class="shitty">Stupid Font</div>
+</div>
+</body>
+
+</html>
