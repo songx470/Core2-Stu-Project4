@@ -10,7 +10,7 @@
    <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="script.js" defer></script>
 
-   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
@@ -18,44 +18,51 @@
 <body>
 
 <div class="one">
-  <div class="two pink">
+	<input id="sticker1" type="radio" name="sticker" value="1" checked>
+  <label for="sticker1" class="two pink">
     <div id="wordone"></div>
     <br />
     <div id="wordtwo"></div>
-  </div>
+  </label>
 </div>
 <div class="one">
-  <div class="two pink">
+	<input id="sticker2" type="radio" name="sticker" value="2">
+  <label for="sticker2" class="two pink">
     <div id="wordone"></div>
     <br />
     <div id="wordtwo"></div>
-  </div>
+  </label>
 </div>
 <div class="one">
-  <div class="two pink">
+	<input id="sticker3" type="radio" name="sticker" value="3">
+  <label for="sticker3" class="two pink">
     <div id="wordone"></div>
     <br />
     <div id="wordtwo"></div>
-  </div>
+  </label>
 </div>
 
 <div class="control">
   <p class="head">Custom Label Maker</p>
   <p class="label">Line 1:</p>
-  <input class="input" id="input1" />
+  <input type="text" class="input" id="input1" />
   <p class="label">Line 2:</p>
-  <input class="input" id="input2" />
+  <input type="text" class="input" id="input2" />
   <div class="clear"></div>
-  <div name="pink" class="sq pink on"></div>
-  <div name="blue" class="sq blue"></div>
-  <div name="green" class="sq green"></div>
-  <div name="winner" class="sq winner"></div>
+  <input id="color-selection-pink" type="radio" name="color" value="pink" checked>
+	<label for="color-selection-pink" class="sq pink"></label>
+  <input id="color-selection-blue" type="radio" name="color" value="blue">
+	<label for="color-selection-blue" class="sq blue"></label>
+  <input id="color-selection-green" type="radio" name="color" value="green">
+	<label for="color-selection-green" class="sq green"></label>
+  <input id="color-selection-winner" type="radio" name="color" value="winner">
+	<label for="color-selection-winner" class="sq winner"></label>
   <div class="clear"></div>
   <p>Line 1 Size:</p>
-  <input id="fontbox1" class="fontbox" value="80">
+  <input id="fontbox1" type="number" class="fontbox" value="80">
   </input>
   <p>Line 2 Size:</p>
-  <input id="fontbox2" class="fontbox" value="140">
+  <input id="fontbox2" type="number" class="fontbox" value="140">
   </input>
 </div>
 </body>

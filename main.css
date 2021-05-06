@@ -9,6 +9,23 @@ body {
   background: #eFefef;
 }
 
+input[type="radio"] {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .one {
   margin: 50px auto;
   background: white;
@@ -17,10 +34,10 @@ body {
   border-radius: 50%;
   border: 2px outset #888;
   position: relative;
-  box-shadow: 20px 40px 150px grey;
 }
 
 .two {
+	display: block;
   font-size: 500%;
   width: 590px;
   height: 290px;
@@ -30,6 +47,10 @@ body {
   border: 2px outset blue;
   color: #441133;
   box-sizing: border-box;
+}
+
+input:checked + .two {
+	box-shadow: 20px 40px 150px grey;
 }
 
 .control {
@@ -98,9 +119,13 @@ body {
   border: 1px dashed grey;
   float: left;
   box-sizing: border-box;
-  margin-left: Calc(100% / 4 - 33.5px);
+  margin-left: calc(100% / 4 - 33.5px);
   background-size:200% !important;
-    
+}
+
+input:checked + .sq {
+	border: white inset 2px !important;
+	box-shadow: 0 0 10px yellow;
 }
 
 .pink {
@@ -127,10 +152,6 @@ body {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/325479/winner.png");
 }
 
-.on {
-  border: white inset 2px !important;
-  box-shadow: 0 0 10px yellow;
-}
 
 @media print {
   .control {
@@ -144,8 +165,8 @@ body {
   }
 }
 
-@media only screen 
-and (min-device-width : 375px) 
+@media only screen
+and (min-device-width : 375px)
 and (max-device-width : 667px) {
   .control {
     position:static;
@@ -157,12 +178,12 @@ and (max-device-width : 667px) {
      -ms-transform: scale(.5,.5); /* IE 9 */
      -webkit-transform: scale(.5,.5); /* Safari */
      transform: scale(.5,.5);
- } 
+ }
   .control {
      -ms-transform: scale(.75,.75); /* IE 9 */
      -webkit-transform: scale(.75,.75); /* Safari */
      transform: scale(.75,.75);
- } 
+ }
 }
 
 .fontbox {
@@ -175,5 +196,3 @@ and (max-device-width : 667px) {
 }
 p {
   margin:5px auto;
-
-
