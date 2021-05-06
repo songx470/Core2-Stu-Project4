@@ -1,42 +1,86 @@
 div {
-  font-family: Dancing Script;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #eFefef;
+  background: #463C3C;
+}
+
+.flex{
+  margin:100px;
+  margin-left:200px;
+  display:;
 }
 
 .one {
-  margin: 50px auto;
-  background: white;
-  width: 600px;
-  height: 300px;
-  border-radius: 50%;
-  border: 2px outset #888;
+  margin: 100px auto;
+  background: #FFD234;
+  width: 450px;
+  height: 450px;
+  border-radius: 10%;
+  border: none;
   position: relative;
-  box-shadow: 20px 40px 150px grey;
+  transform: rotate(20deg);
+}
+
+.b {
+  margin: 100px auto;
+  background: #FFD234;
+  width: 450px;
+  height: 450px;
+  border-radius: 10%;
+  border: none;
+  position: relative;
+   transform: rotate(20deg);
+}
+
+.c {
+  margin: 100px auto;
+  background: #FFD234;
+  width: 450px;
+  height: 450px;
+  border-radius: 10%;
+  border: none;
+  position: relative;
+   transform: rotate(20deg);
 }
 
 .two {
   font-size: 500%;
-  width: 590px;
-  height: 290px;
+  width: 450px;
+  height: 450px;
   padding: 0;
   margin: 5px auto;
-  border-radius: 50%;
-  border: 2px outset blue;
+  border-radius: 10%;
+  border: 2px black;
   color: #441133;
+  margin-top:-1.5px;
   box-sizing: border-box;
+  cursor:pointer;
+}
+
+.one:hover{
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+}
+
+.b:hover{
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+}
+
+.c:hover{
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
 }
 
 .control {
+  margin-top:100px;
   width: 200px;
   height: 400px;
-  border: 2px outset #888;
-  border-radius: .75em;
+  border-radius: 1em;
   position: fixed;
   top: 125px;
   left: 10%;
@@ -47,7 +91,7 @@ body {
 
 .head {
   width: 149px;
-  margin: 0 auto;
+  margin-top: 1.5rem;
   padding: 0;
 }
 
@@ -82,7 +126,33 @@ body {
 #wordone {
   font-size:80px;
   position: relative;
+}
+
+#wordtwob {
+  font-size: 140px;
+  margin-top:1.7rem;
+  position: relative;
+  top: -115px;
+  letter-spacing: 1.2rem;
+  line-height: 10rem;
   left: 0;
+}
+
+#wordoneb {
+  font-size:80px;
+  position: relative;
+}
+
+#wordtwoc {
+  font-size: 140px;
+  position: relative;
+  top: -115px;
+  left: 0;
+}
+
+#wordonec {
+  font-size:80px;
+  position: relative;
 }
 
 .hitbox {
@@ -104,33 +174,34 @@ body {
 }
 
 .pink {
-  border: 2px outset purple;
+  border: none;
   color: #441133;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/325479/pink.PNG")
+  background-image: url("a.png");
 }
 
 .blue {
-  color: #111155;
-  border: 2px outset blue;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/325479/blue.PNG");
+  color: #FFD234;
+  border: none;
+  background-image: url("b.png");
 }
 
 .green {
-  border: 2px outset green;
+  border:none;
   color: #003300;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/325479/green.PNG");
+  background-image: url("c.png");
 }
 
 .winner {
-  color: #111155;
-  border: 2px outset pink;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/325479/winner.png");
+  color: #FAA5A5;
+  border: none;
+  background-image: url("d.png");
 }
 
 .on {
   border: white inset 2px !important;
   box-shadow: 0 0 10px yellow;
 }
+
 
 @media print {
   .control {
@@ -151,16 +222,16 @@ and (max-device-width : 667px) {
     position:static;
     margin:0px auto;
     top:-125px;
-    left:0;
+    left:0; 
   }
   .one {
-     -ms-transform: scale(.5,.5); /* IE 9 */
-     -webkit-transform: scale(.5,.5); /* Safari */
+     -ms-transform: scale(.5,.5); 
+     -webkit-transform: scale(.5,.5); 
      transform: scale(.5,.5);
  } 
   .control {
-     -ms-transform: scale(.75,.75); /* IE 9 */
-     -webkit-transform: scale(.75,.75); /* Safari */
+     -ms-transform: scale(.75,.75); 
+     -webkit-transform: scale(.75,.75); 
      transform: scale(.75,.75);
  } 
 }
@@ -175,5 +246,16 @@ and (max-device-width : 667px) {
 }
 p {
   margin:5px auto;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:1.2rem;
+  line-height: 1.2rem;
+}
+
+
+
+
+
+
+
 
 
