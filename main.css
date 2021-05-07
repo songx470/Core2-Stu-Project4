@@ -6,11 +6,12 @@ div {
 
 body {
   background: #463C3C;
+    cursor: url(1.cur), auto;
 }
 
 .flex{
   margin:100px;
-  margin-left:200px;
+  margin-left:190px;
   display:;
 }
 
@@ -23,6 +24,7 @@ body {
   border: none;
   position: relative;
   transform: rotate(20deg);
+  cursor: url(1.cur), auto;
 }
 
 .b {
@@ -34,6 +36,7 @@ body {
   border: none;
   position: relative;
    transform: rotate(20deg);
+     cursor: url(1.cur), auto;
 }
 
 .c {
@@ -45,6 +48,7 @@ body {
   border: none;
   position: relative;
    transform: rotate(20deg);
+     cursor: url(1.cur), auto;
 }
 
 .two {
@@ -59,21 +63,25 @@ body {
   margin-top:-1.5px;
   box-sizing: border-box;
   cursor:pointer;
+  cursor: url(1.cur), auto;
 }
 
 .one:hover{
   transform: rotate(0deg);
   transition-duration: 0.8s;
+    box-shadow: 0 0 10px #FFD234;
 }
 
 .b:hover{
   transform: rotate(0deg);
   transition-duration: 0.8s;
+    box-shadow: 0 0 10px #FFD234;
 }
 
 .c:hover{
   transform: rotate(0deg);
   transition-duration: 0.8s;
+    box-shadow: 0 0 10px #FFD234;
 }
 
 .control {
@@ -250,6 +258,23 @@ p {
   font-size:1.2rem;
   line-height: 1.2rem;
 }
+
+#yellow{
+  background: #FFD234;
+  border-radius:10%;
+  height:30px;
+  width:30px;
+  margin-top:-30px;
+  margin-left:8px;
+  transform: rotate(20deg);
+}
+
+#yellow:hover{
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px #FFD234;
+}
+
+
 
 
 
